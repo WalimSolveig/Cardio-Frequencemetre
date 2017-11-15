@@ -1,0 +1,45 @@
+Points importants :
+- Fréquence cardiaque != rhytme cardiaque.
+- 
+
+Choses à faire :
+- Construire un cardiofréquencemètre.
+- Faire un code qui détecte, mesure et calcule le pouls.
+- Faire un coeur avec des LEDs qui s'allume à chaque battement.
+- Faire le schéma sur Fritzing.
+- Créer un module en C Arduino avec "coeur.c";"coeur.h";"param.h".
+
+La visualisation et la récupération des données se basent sur l'environnement Processing 2.
+Voici les étapes à suivre:
+# Télécharger et installer Processing sur la machine qui fera les relevés
+http://processing.org
+# Ouvrir avec Processing le fichier ConvertisseurSerialCSV.pde
+# Modifier la ligne udSerial = new Serial(this, Serial.list()[0], 9600) si nécessaire en
+mettant le port utilisé.
+# Exécuter le programme pour récupérer les informations et générer un programme.
+Quand le nombre des lignes est suffisant, arrêtez le programme et vérifiez le fichier csv
+généré.
+
+- Créer un code qui tri les données brutes émises par l'Arduino.
+Le code devra être organisé de la manière suivante :
+? main. c
+? menu.c (et menu.h) : contient les fonctions pour afficher les menus
+? donnees.c (et donnees.h): contient toutes les fonctions nécessaires pour la manipulation de la
+structure de données et la lecture du fichier
+? actions.c (et actions.h) : contient toutes les fonctions nécessaires pour le traitement de données
+(voir ci-après pour plus d’informations sur les actions possibles)
+
+Créer un menu:
+avec au moins les fonctionnalités suivantes :
+? Afficher les données dans l’ordre du fichier .csv
+? Afficher les données en ordre croissant/décroissant (selon le temps, selon le pouls)
+? Rechercher et afficher les données pour un temps particulier
+? Afficher la moyenne de pouls dans une plage de temps donnée
+? Afficher le nombre de lignes de données actuellement en mémoire
+? Rechercher et afficher les max/min de pouls (avec le temps associé)
+? Autres (facultatif)…
+? Quitter l’application
+
+
+
+ 
