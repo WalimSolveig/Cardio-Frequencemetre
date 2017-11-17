@@ -1,5 +1,5 @@
-#ifndef __include_coeur_h__
-#define __include_coeur_h__
+#ifndef COEUR_H
+#define COEUR_H
 
 /*
  ########################################################################
@@ -7,7 +7,7 @@
  ########################################################################
 */
 
-void WriteOn();
+void WriteOn(); // Fonction de base pour écrire sur un fichier
 
 /*
  ########################################################################
@@ -15,8 +15,26 @@ void WriteOn();
  ########################################################################
 */
 
-int AllumageChenille(); // Allumage des LEDs en chenille.
-int AllumageUnSurTrois(); // Allumage d'une LED sur trois.
-int AllumageUnSurDeux(); // Allumage d'une LED sur deux.
+void AllumageChenille(); // Allumage des LEDs en chenille.
+void AllumageUnSurTrois(); // Allumage d'une LED sur trois.
+void AllumageUnSurDeux(); // Allumage d'une LED sur deux.
+
+/*
+ ########################################################################
+ #           Fonctions d'allumage de la LED au choisie                  #
+ ########################################################################
+*/
+
+void AllumageLEDDeux();
+void AllumageLEDTrois();
+void AllumageLEDQuatre();
+void AllumageLEDCinq();
+void AllumageLEDSix();
+void AllumageLEDSept();
+void AllumageLEDHuit();
+void AllumageLEDNeuf();
+void AllumageLEDDix();
+void AllumageLEDOnze();
+
 
 #endif
