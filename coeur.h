@@ -16,8 +16,8 @@ void WriteOn(); // Fonction de base pour écrire sur un fichier
 */
 
 void AllumageChenille(); // Allumage des LEDs en chenille.
-void AllumageUnSurTrois(); // Allumage d'une LED sur trois.
-void AllumageUnSurDeux(); // Allumage d'une LED sur deux.
+void AllumageUneSurTrois(); // Allumage d'une LED sur trois.
+void AllumageUneSurDeux(); // Allumage d'une LED sur deux.
 
 /*
  ########################################################################
@@ -35,6 +35,5 @@ void AllumageLEDHuit();
 void AllumageLEDNeuf();
 void AllumageLEDDix();
 void AllumageLEDOnze();
-
 
 #endif
