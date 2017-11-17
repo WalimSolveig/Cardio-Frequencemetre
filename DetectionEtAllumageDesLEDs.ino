@@ -14,12 +14,6 @@ volatile int seuil = 650; // Notre seuil fixé
 void setup()
 {
   Serial.begin(9600);
-  //Boucle d'initialisation des modes et mise à 0V
-  for (int i = 0; i < 10; i++) // i va nous servir pour parcourir le tableau
-  {
-    pinMode(pinLed[i], OUTPUT); //on utilise les valeurs du tableau
-    digitalWrite(pinLed[i], LOW); // l'une après l'autre
-  }
 
 }
 void loop(){
@@ -29,7 +23,7 @@ void loop(){
     btm+=1;
 
     timerms++;
-    timers = timerms * 0,001 // Conversion millisecondes à secondes
+    timers = timerms * 0,001; // Conversion millisecondes à secondes
  
     Serial.println("#####################MENU#######################");
     Serial.println("# 1# Allumer toutes les LEDs                   #");
@@ -140,20 +134,25 @@ void loop(){
       digitalWrite(n, LOW);
     }
     delay(b);
-  }
      
   
-else{ // Sinon, nous n'enregistrons pas de battement.
+ if(sensorValue > .9*1023)
+   { 
+  // Sinon, nous n'enregistrons pas de battement.
     btm = 0;
-for (int i = 0; i < 10; i++) // Et nous ferons en sorte que les LEDs soient éteintes.
-{
-  digitalWrite(pinLed[i],LOW);
-}
-}
-  
+  digitalWrite(2,LOW);
+  digitalWrite(3,LOW);
+  digitalWrite(4,LOW);
+  digitalWrite(5,LOW);
+  digitalWrite(6,LOW);
+  digitalWrite(7,LOW);
+  digitalWrite(8,LOW);
+  digitalWrite(9,LOW);
+  digitalWrite(10,LOW);
+  digitalWrite(11,LOW);
+   }
   
   Serial.println(btm);
   Serial.print(";");
   Serial.println(timers);
 }
-
