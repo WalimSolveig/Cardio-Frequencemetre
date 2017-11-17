@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "coeur.h"
 
-int main(void)
+int main()
 {
     int choice;
     int numled;
@@ -72,7 +72,7 @@ int main(void)
 	    {
 	    	AllumageLEDTrois();
 	    }
-	    
+
 	    if(numled == 3);
 	    {
 	    	AllumageLEDQuatre();
@@ -110,6 +110,7 @@ int main(void)
 
         if(numled == 10);
 	    {
-	    	AllumageLEDOnze();    
+	    	AllumageLEDOnze();
         }
+}
 }
