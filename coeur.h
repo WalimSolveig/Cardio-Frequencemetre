@@ -1,13 +1,5 @@
-#ifndef COEUR_H
-#define COEUR_H
-
-/*
- ########################################################################
- #                      écrire sur un fichier                           #
- ########################################################################
-*/
-
-void WriteOn(); // Fonction de base pour écrire sur un fichier
+#ifndef COEUR_H_INCLUDED
+#define COEUR_H_INCLUDED
 
 /*
  ########################################################################
@@ -36,4 +28,4 @@ void AllumageLEDNeuf();
 void AllumageLEDDix();
 void AllumageLEDOnze();
 
-#endif
+#endif // COEUR_H_INCLUDED
