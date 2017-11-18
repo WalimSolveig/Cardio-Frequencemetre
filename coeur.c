@@ -1,23 +1,6 @@
 #include <stdio.h>
 #include "coeur.h"
 
-/*
- ########################################################################
- #             Partie génération(écriture) de code                      #
- ########################################################################
-*/
-
-void WriteOn()  // Cette fonction n'est pas utilisée, elle sert juste d'exemple car elle permet d'écrire sur une fichier
-{
-	FILE* fichier = NULL;
-    fichier = fopen("test.txt", "w");
-    if (fichier != NULL)
-    {
-    fputs("", fichier);
-    fclose(fichier);
-    }
-    return WriteOn();
-}
 
 /*
  ########################################################################
@@ -35,7 +18,6 @@ void AllumageChenille()
      fputs("int timer=300;\nvoidsetup(){\npinMode(3, OUTPUT);\npinMode(4, OUTPUT);\npinMode(5, OUTPUT);\npinMode(6, OUTPUT);\npinMode(7, OUTPUT);\npinMode(8, OUTPUT);\npinMode(9, OUTPUT);\npinMode(10, OUTPUT);\npinMode(11, OUTPUT);\npinMode(2, OUTPUT);\n}\nvoid loop() {\ndigitalWrite(2, HIGH);\ndelay(timer);\ndigitalWrite(3, HIGH);\ndelay(timer);\ndigitalWrite(3, LOW);\ndelay(timer);\ndigitalWrite(4, HIGH);\ndelay(timer);\ndigitalWrite(4, LOW);\ndelay(timer);\ndigitalWrite(5, HIGH);\ndelay(timer);\ndigitalWrite(5, LOW);\ndelay(timer);\ndigitalWrite(6, HIGH);\ndelay(timer);\ndigitalWrite(6, LOW);\ndelay(timer);\ndigitalWrite(7, HIGH);\ndelay(timer);\ndigitalWrite(7, LOW);\ndelay(timer);\ndigitalWrite(8, HIGH);\ndelay(timer);\ndigitalWrite(8, LOW);\ndelay(timer);\ndigitalWrite(9, HIGH);\ndelay(timer);\ndigitalWrite(9, LOW);\ndelay(timer);\ndigitalWrite(10, HIGH);\ndelay(timer);\ndigitalWrite(10, LOW);\ndelay(timer);\ndigitalWrite(11, HIGH);\ndelay(timer);\ndigitalWrite(11, LOW);\ndelay(timer);\ndigitalWrite(12, HIGH);\ndelay(timer);\ndigitalWrite(12, LOW);\ndelay(timer);\n", fichier);
      fclose(fichier);
     }
-    return AllumageChenille();
 }
 
 void AllumageUneSurTrois()
@@ -80,7 +62,7 @@ void AllumageLEDTrois(){
             fputs("int timer=300;\nvoid setup() {\n/*Définir les OUTPOUT utilisés*/\npinMode(3, OUTPUT);\n}\nvoid loop{\ndigitalWrite(3, HIGH);\n}\n", fichier);
             fclose(fichier);
         }
-    return AllumageUnSurTrois();
+
 }
 
 void AllumageLEDQuatre(){
@@ -91,7 +73,7 @@ void AllumageLEDQuatre(){
             fputs("int timer=300;\nvoid setup() {\n/*Définir les OUTPOUT utilisés*/\npinMode(4, OUTPUT);\n}\nvoid loop{\ndigitalWrite(4, HIGH);\n}\n", fichier);
             fclose(fichier);
 	        }
-	return AllumageLEDQuatre();
+
 }
 
 void AllumageLEDCinq(){
@@ -102,11 +84,11 @@ void AllumageLEDCinq(){
             fputs("int timer=300;\nvoid setup() {\n/*Définir les OUTPOUT utilisés*/\npinMode(5, OUTPUT);\n}\nvoid loop{\ndigitalWrite(5, HIGH);\n}\n", fichier);
             fclose(fichier);
 	        }
-	return AllumageLEDCinq();
+
 }
 
 void AllumageLEDSix(){
-	
+
 	FILE* fichier = NULL;
             fichier = fopen("led5.ino", "w");
             if (fichier != NULL)
@@ -114,7 +96,7 @@ void AllumageLEDSix(){
             fputs("int timer=300;\nvoid setup() {\n/*Définir les OUTPOUT utilisés*/\npinMode(6, OUTPUT);\n}\nvoid loop{\ndigitalWrite(6, HIGH);\n}\n", fichier);
             fclose(fichier);
 	        }
-	return AllumageLEDSix();
+
 }
 
 void AllumageLEDSept(){
@@ -125,7 +107,7 @@ void AllumageLEDSept(){
             fputs("int timer=300;\nvoid setup() {\n/*Définir les OUTPOUT utilisés*/\npinMode(7, OUTPUT);\n}\nvoid loop{\ndigitalWrite(7, HIGH);\n}\n", fichier);
             fclose(fichier);
 	        }
-	return AllumageLEDSept();
+
 }
 
 void AllumageLEDHuit(){
@@ -136,7 +118,7 @@ void AllumageLEDHuit(){
             fputs("int timer=300;\nvoid setup() {\n/*Définir les OUTPOUT utilisés*/\npinMode(8, OUTPUT);\n}\nvoid loop{\ndigitalWrite(8, HIGH);\n}\n", fichier);
             fclose(fichier);
 	        }
-	return AllumageLEDHuit();
+
 }
 
 void AllumageLEDNeuf(){
@@ -147,7 +129,7 @@ void AllumageLEDNeuf(){
             fputs("int timer=300;\nvoid setup() {\n/*Définir les OUTPOUT utilisés*/\npinMode(9, OUTPUT);\n}\nvoid loop{\ndigitalWrite(9, HIGH);\n}\n", fichier);
             fclose(fichier);
 	        }
-	return AllumageLEDNeuf();
+
 }
 
 void AllumageLEDDix(){
@@ -158,7 +140,7 @@ void AllumageLEDDix(){
             fputs("int timer=300;\nvoid setup() {\n/*Définir les OUTPOUT utilisés*/\npinMode(10, OUTPUT);\n}\nvoid loop{\ndigitalWrite(10, HIGH);\n}\n", fichier);
             fclose(fichier);
 	        }
-	return AllumageLEDDix();
+
 }
 
 void AllumageLEDOnze(){
@@ -170,5 +152,5 @@ void AllumageLEDOnze(){
      fclose(fichier);
      }
 
-    return AllumageLEDOnze();
+
 }
